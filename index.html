@@ -1,41 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {background-color: rgb(102, 82, 191);}
-h1   {color: whitesmoke;}
-p    {color: black;}
-</style>
+    <meta chartset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/89fa8853a0.js" crossorigin="anonymous"></script>
+
 </head>
+<body>
 
+<div class="main">
+    <div class="navbar">
+        <div class="icon">
+                <h1 class="logo"> Gowri Suresh </h1>
+        </div>
+        
+        <div class="menu">
+                <ul>
+                    <li> <a  href="#main">Home</a></li> 
+                    <li> <a  href="#about">About</a></li> 
+                    <li> <a  href="#projects">Projects</a></li>
+                    <li> <a  href="#certifications"> Certifications </a></li>
+                    <li> <a  href="#contact"> Contact</a></li>
+                    
 
+                </ul>
+                
+                
+                
+        </div>
 
+    </div>        
+            
+        <div class="content">
+                <h2 >Data science enthusiast</h2>
+                <p class="par"> Hey! This is Gowri Suresh. Welcome to my portfolio website. <br>Let's get to know me through my projects and let's connect. </p>   
+        </div>
 
-<div  style="font-size:20px; text-align: right; margin-top: 30px;"> 
-    <a style="padding-right: 20px;" href="index.html">Home</a> 
-    <a style="padding-right: 20px;" href="about.html">About</a>
-    <a style="padding-right: 20px;" href="projects.html">Projects</a>
+            
+            
     
+</div>
+
+<!------------about---------------- -->
    
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="me.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle"> About Me</h1>
+                <p>  Driven bioinformatics and data science enthusiast dedicated to achieving excellence through focused effort, proactive, problem-solving, and a positive mindset. To leverage my expertise in ongoing organizational projects while continuously enhancing skills, aiming to contribute effectively in dynamic research environments.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    <p class="tab-links" onclick="opentab('projects')"> Projects</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="'skills">
+                    <ul>
+                        <li><span>Programming</span><br> Python <br> R<br> MATLAB <br> SQL <br> C</li>
+
+                        <li><span>Concepts</span><br>Machine Learning<br> Deep Learning <br>Structure-based <br> Drug Design <br> Virtual Screening <br>Visualization</li>
+
+                        <li><span>Tools</span><br> Jupyter NoteBook <br> PyMol<br> Chimera<br> Cytoscape<br> Avogadro 2.0<br> AurgusLab<br> Discovery Studio Vizualizer<br> AutoDock Tools<br> AutoDock 4.2.<br> PyRx<br> KNIME</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2023</span> <br> M.Sc Bioinformatics <br> JSS ACADEMY OF HIGHER EDUCATION & RESEARCH</li>
+                        <li><span>2018-2021</span><br> B.Sc in Biotechnology, Microbiology, Biochemistry (BMBt) <br> JSS COLLEGE FOR WOMENS</li>
+                    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>03/2023-07-2023</span> <br>Comparative Performance Analysis of Random Forest and CNN for Brain Tumor Detection and Classification in MRI Imaging</li>
+                        <li><span>10/2022-02/2023</span><br> Identification of MAPKAPK2 (MK2) Non-Competitive inhibitors via in-silico analysis</li>
+                    
+                    </ul>
+                </div>
+            </div> 
+                
+        </div>
+    </div>
 </div>
 
-<h1 class= "site-heading- site-animate" style="font-size:50px; text-align: center; margin-top: 30px;"> Hey! This is Gowri Suresh  </h1>
-<h2 style="font-size:30px; text-align: center;"> Data science enthusiast</h2>
- 
+<!-- ----------------Projects---------------------- -->
 
-    
-<hr>
+<div id="project">
+    <div class="container">
+        <h1 class="subtitle"> Projects </h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Image Processing</h2>
+                <p> Comparative Performance Analysis of Random Forest and CNN for Brain Tumor Detection and Classification in MRI Imaging</p>
+
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-dna"></i>
+                <h2> Molecular Docking</h2>
+                <p> Identification of MAPKAPK2 (MK2) Non-Competitive inhibitors via in-silico analysis</p>
+
+                <a href="#">Learn More</a>
+            </div>
+        </div>
 
 
-<h2 style="font-size:30px; text-align: center;"> About Me </h2>
-
-<div  style=" text-align: center;">
-    <img style="width: 60%;" src="images\photo.jpg">
+    </div>
 </div>
 
-<p  style="font: size 10px; text-align: center;line-height: 30px;margin-bottom: 20px;"> Driven bioinformatics and data science enthusiast dedicated to achieving excellence through focused effort, proactive, <br> problem-solving, and a positive mindset. To leverage my expertise in ongoing organizational projects while continuously enhancing skills, aiming to contribute effectively in dynamic research environments. </p>
-
-
-<div  style=" text-align: center;">
-    <a style="font: size 10px; background-color: black; padding: 15px 35px 15px 35px;color: white;line-height: 30px;margin-bottom: 50px;" href="https://www.linkedin.com/in/gowrisuresh01/ ", > Linkedin </a>
+<!-- ---------Certifications---------- -->
+<div id="certifications"> 
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="cert-list">
+            <div class="certs">
+                <img src="udemy.jpg">
+            </div>
+            <div class="certs">
+                <img src="nptel.jpg">
+            </div>
+            <div class="certs">
+                <img src="poster.jpg">
+            </div>
+            <div class="certs">
+                <img src="conference.jpg">
+            </div>
+        </div>
+        
+        </div>
+    </div>
 </div>
+
+<!-- ---------Contact---------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contant-left">
+                <h1 class="sub-title">Contact Me</h1><br>
+                <p><i class="fa-solid fa-envelope"></i>  gowris0109@gmail.com</p><br>
+                <p<i class="fa-solid fa-phone"></i>  8792314159</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Gowri0109"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gowrisuresh01/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div> 
+        </div>
+
+        <a href="Gowri_Suresh.pdf" dwonload class="btn btn2"> Download CV</a>
+    </div>
+</div>
+
+<!-- ---------Copyright---------- -->
+<div class="copyright">
+    <p>Copyright 2024 Gowri Suresh. </p>
+</div>
+
+<script> 
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tablcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+</body>
+</html>
